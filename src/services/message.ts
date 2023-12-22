@@ -6,7 +6,7 @@ import {
   ChatPluginPayload,
   ChatTTS,
   ChatTranslate,
-} from '@/types/chatMessage';
+} from '@/types/message';
 import { LLMRoleType } from '@/types/llm';
 
 export class MessageService {

@@ -4,7 +4,7 @@ import { topicService } from '@/services/topic';
 import { settingsSelectors, useGlobalStore } from '@/store/global';
 import { useSessionStore } from '@/store/session';
 import { sessionExportSelectors, sessionSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/chatMessage';
+import { ChatMessage } from '@/types/message';
 import { ConfigFile } from '@/types/exportConfig';
 import { LobeSessions } from '@/types/session';
 import { GlobalSettings } from '@/types/settings';

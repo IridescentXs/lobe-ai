@@ -1,4 +1,4 @@
-import { ChatMessage } from '@/types/chatMessage';
+import { ChatMessage } from '@/types/message';
 import { ChatTopic } from '@/types/topic';
 
 export interface ChatStoreState {

@@ -1,4 +1,4 @@
-import { ChatMessage, ChatMessageMap } from '@/types/chatMessage';
+import { ChatMessage, ChatMessageMap } from '@/types/message';
 
 import { MessageDispatch, messagesReducer } from './message';
 

@@ -1,6 +1,6 @@
 import { t } from 'i18next';
 
-import { ChatMessageError } from '@/types/chatMessage';
+import { ChatMessageError } from '@/types/message';
 import { ErrorResponse, ErrorType } from '@/types/fetch';
 
 export const getMessageError = async (response: Response) => {

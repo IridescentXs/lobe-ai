@@ -6,7 +6,7 @@ import { INBOX_SESSION_ID } from '@/const/session';
 import { useGlobalStore } from '@/store/global';
 import { useSessionStore } from '@/store/session';
 import { agentSelectors } from '@/store/session/selectors';
-import { ChatMessage } from '@/types/chatMessage';
+import { ChatMessage } from '@/types/message';
 import { MetaData } from '@/types/meta';
 import { merge } from '@/utils/merge';
 
@@ -34,6 +34,13 @@ const getMeta = (message: ChatMessage) => {
       return {
         avatar: '🧩',
         title: 'plugin-unknown',
+      };
+    }
+    case 'tool': {
+      // TODO: 后续改成将 plugin metadata 写入 message metadata 的方案
+      return {
+        avatar: '⚙',
+        title: 'tools-unknown',
       };
     }
   }
